@@ -1,0 +1,24 @@
+digraph G {
+    splines=false;  // Controls how edges are drawn (ortho, curved, etc.)
+
+    /* ===== ENTITIES (Nodes) ===== */
+    // Place type
+    
+    Station [label=“Station”, shape=rectangle, style=filled, color=lightblue]
+    // Place names
+    Holborn [label=“Holborn”, shape=circle, style=filled, color=lightgreen]
+    F1 [label=“F1”, shape=circle, style=filled, color=lightgreen]
+    // Properties/Details
+    shortName [label=“Short Name”, shape=oval, color=gray]
+    address [label=“High Holborn, WC1”, shape=oval, color=gray]
+    /* ===== RELATIONSHIPS (Edges) ===== */
+    // Hierarchy: Station type -> specific stations
+    Station -> Holborn
+    Station -> F1
+    // Properties of stations
+    F1 -> shortName [label=“.63"]
+    Holborn -> address [label=“located at”]
+    /* ===== RANKS (Alignment) ===== */
+    // This makes nodes appear on the same horizontal level
+    { rank=same; Holborn; F1; }
+}
