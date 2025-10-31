@@ -1,24 +1,38 @@
-digraph G {
-    splines=false;  // Controls how edges are drawn (ortho, curved, etc.)
+digraph Places {
+// STEP 1: Set direction
+rankdir=TB;
+// STEP 2: Force main place to top
+{ rank=source; "Main Place Name"; }
+// STEP 3: Define the main place
+"Main Place Name" [
+label="Holborn"
+shape=doubleoctagon
+style=filled
+fillcolor="#ff0000"
+fontcolor="#FFFFFF"
+fontsize=16
+]
+// STEP 4: Define categories (same level)
+{ rank=same; Category1; Category2; }
+Category1 [label="Parks", shape=oval]
+Category2 [label="Pubs", shape=oval]
 
-    /* ===== ENTITIES (Nodes) ===== */
-    // Place type
-    
-    Station [label=“Station”, shape=rectangle, style=filled, color=lightblue]
-    // Place names
-    Holborn [label=“Holborn”, shape=circle, style=filled, color=lightgreen]
-    F1 [label=“F1”, shape=circle, style=filled, color=lightgreen]
-    // Properties/Details
-    shortName [label=“Short Name”, shape=oval, color=gray]
-    address [label=“High Holborn, WC1”, shape=oval, color=gray]
-    /* ===== RELATIONSHIPS (Edges) ===== */
-    // Hierarchy: Station type -> specific stations
-    Station -> Holborn
-    Station -> F1
-    // Properties of stations
-    F1 -> shortName [label=“.63"]
-    Holborn -> address [label=“located at”]
-    /* ===== RANKS (Alignment) ===== */
-    // This makes nodes appear on the same horizontal level
-    { rank=same; Holborn; F1; }
+// STEP 5: Define specific places (they auto-arrange below)
+Place1 [label="Red Lion Square", shape=rectangle]
+Place2 [label="Wetherspoons", shape=rectangle]
+Place3 [label="Bloomsbury", shape=rectangle]
+Place4 [label="Lincons Inn Fields", shape=rectangle]
+Place5 [label="Princess Louise", shape=rectangle]
+Place6 [label="The Duke", shape=rectangle]
+Place7 [label="The Seven Stars", shape=rectangle]
+// STEP 6: Create connections (top to bottom)
+"Main Place Name" -> Category1
+"Main Place Name" -> Category2
+Category1 -> Place1
+Category2 -> Place2
+Category1 -> Place3
+Category1 -> Place4
+Category2 -> Place5
+Category2 -> Place6
+Category2 -> Place7
 }
