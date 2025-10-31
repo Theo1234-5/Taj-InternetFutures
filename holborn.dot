@@ -5,7 +5,7 @@ rankdir=TB;
 { rank=source; "Main Place Name"; }
 // STEP 3: Define the main place
 "Main Place Name" [
-label="Holborn, Camden Borough"
+label="Food and drink"
 shape=tripleoctagon
 style=filled
 fillcolor="#590ce9"
@@ -18,15 +18,15 @@ Category1 [label="Coffee shops", shape=trapezium]
 Category2 [label="Supermarkets", shape=trapezium]
 Category3 [label="Restaurants", shape=trapezium]
 // STEP 5: Define specific places (they auto-arrange below)
-Place1 [label="Starbucks", shape=rectangle]
-Place2 [label="Gails", shape=rectangle]
-Place3 [label="Pret A Manger", shape=rectangle]
-Place4 [label="Waitrose", shape=rectangle]
-Place5 [label="Sainsbury's", shape=rectangle]
-Place6 [label="Tesco", shape=rectangle]
-Place7 [label="Colonel Saab HH", shape=rectangle]
-Place8 [label="Holborn Dining Room", shape=rectangle]
-Place9 [label="42 Holborn", shape=rectangle]
+Starbucks [label="Starbucks", shape=rectangle]
+Gails [label="Gails", shape=rectangle]
+PretAManger [label="Pret A Manger", shape=rectangle]
+Waitrose [label="Waitrose", shape=rectangle]
+Sainsbury's [label="Sainsbury's", shape=rectangle]
+Tesco [label="Tesco", shape=rectangle]
+ColonelSaabHH [label="Colonel Saab HH", shape=rectangle]
+HolbornDiningRoom [label="Holborn Dining Room", shape=rectangle]
+42Holborn [label="42 Holborn", shape=rectangle]
 
 #Place2 [label="Supermarket", shape=rectangle]
 #Place3 [label="Pizza Place", shape=rectangle]
@@ -34,13 +34,13 @@ Place9 [label="42 Holborn", shape=rectangle]
 "Main Place Name" -> Category1
 "Main Place Name" -> Category2
 "Main Place Name" -> Category3
-Category1 -> Place1
-Category1 -> Place2
-Category1 -> Place3
-Category2 -> Place4
-Category2 -> Place5
-Category2 -> Place6
-Category3 -> Place7
-Category3 -> Place8
-Category3 -> Place9
+Category1 -> Starbucks
+Category1 -> Gails
+Category1 -> PretAManger
+Category2 -> Waitrose
+Category2 -> Sainsbury's
+Category2 -> Tesco
+Category3 -> ColonelSaabHH
+Category3 -> HolbornDiningRoom
+Category3 -> 42Holborn
 }
