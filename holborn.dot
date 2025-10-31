@@ -22,11 +22,11 @@ Starbucks [label="Starbucks", shape=rectangle]
 Gails [label="Gails", shape=rectangle]
 PretAManger [label="Pret A Manger", shape=rectangle]
 Waitrose [label="Waitrose", shape=rectangle]
-Sainsbury's [label="Sainsbury's", shape=rectangle]
+Sainsburys [label="Sainsbury's", shape=rectangle]
 Tesco [label="Tesco", shape=rectangle]
 ColonelSaabHH [label="Colonel Saab HH", shape=rectangle]
 HolbornDiningRoom [label="Holborn Dining Room", shape=rectangle]
-42Holborn [label="42 Holborn", shape=rectangle]
+FTHolborn [label="42 Holborn", shape=rectangle]
 
 #Place2 [label="Supermarket", shape=rectangle]
 #Place3 [label="Pizza Place", shape=rectangle]
@@ -38,9 +38,9 @@ Category1 -> Starbucks
 Category1 -> Gails
 Category1 -> PretAManger
 Category2 -> Waitrose
-Category2 -> Sainsbury's
+Category2 -> Sainsburys
 Category2 -> Tesco
 Category3 -> ColonelSaabHH
 Category3 -> HolbornDiningRoom
-Category3 -> 42Holborn
+Category3 -> FTHolborn
 }
