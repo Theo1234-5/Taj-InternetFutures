@@ -16,23 +16,28 @@ fontsize=16
 { rank=same; Category1; Category2; }
 Category1 [label="Parks", shape=oval]
 Category2 [label="Pubs", shape=oval]
+Category3 [label="TFL", shape=oval]
 
 // STEP 5: Define specific places (they auto-arrange below)
-Place1 [label="Red Lion Square", shape=rectangle]
-Place2 [label="Wetherspoons", shape=rectangle]
-Place3 [label="Bloomsbury", shape=rectangle]
-Place4 [label="Lincons Inn Fields", shape=rectangle]
-Place5 [label="Princess Louise", shape=rectangle]
-Place6 [label="The Duke", shape=rectangle]
-Place7 [label="The Seven Stars", shape=rectangle]
+RedLionSquare[label="Red Lion Square", shape=rectangle]
+Wetherspons[label="Wetherspoons", shape=rectangle]
+Bloomsbury[label="Bloomsbury", shape=rectangle]
+LinconsInnFields[label="Lincons Inn Fields", shape=rectangle]
+PrincessLouise[label="Princess Louise", shape=rectangle]
+TheDuke[label="The Duke", shape=rectangle]
+TheSevenStars[label="The Seven Stars", shape=rectangle]
+HolbornStation[label="Holborn Station", shape=rectangle]
+
 // STEP 6: Create connections (top to bottom)
 "Main Place Name" -> Category1
 "Main Place Name" -> Category2
-Category1 -> Place1
-Category2 -> Place2
-Category1 -> Place3
-Category1 -> Place4
-Category2 -> Place5
-Category2 -> Place6
-Category2 -> Place7
+"Main Place Name" -> Category3 
+Category1 -> RedLionSquare
+Category2 -> Wetherspons
+Category1 -> Bloomsbury
+Category1 -> LinconsInnFields
+Category2 -> PrincessLouise
+Category2 -> TheDuke
+Category2 -> TheSevenStars
+Category3 -> HolbornStation 
 }
