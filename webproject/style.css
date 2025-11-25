@@ -1,0 +1,27 @@
+
+body {
+  background-color: hotpink;
+}
+h1 {
+  color: white;
+}
+p {
+  color: purple;
+}
+
+header {    
+  background-color: teal;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+} 
+aside#LINKS {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  background-color: lightgray;
+  color: blue;
+}
+
