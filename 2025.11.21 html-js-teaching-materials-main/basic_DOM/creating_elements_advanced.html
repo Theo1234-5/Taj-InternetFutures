@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM and JS: Creating elements advanced</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 16px;
+            color: hsla(0, 0%, 85%);
+            background-color: hsla(0, 0%,10%);
+            width:85%;
+            margin:3rem auto;
+        }
+        
+        b {
+            color: yellow;
+        }
+
+        .loaded {
+            color:hsla(100, 60%, 40%);
+        }
+
+        .loadedText {
+            color:hsla(100, 20%, 30%);
+            font-size: 1.2rem;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Creating elements</h1>
+    <p>This example adds an element to the DOM (HTML body document) 
+        when the page loads by specifying html directly using the <b>innerHTML</b> property.
+    </p>
+
+</body>
+
+<script>
+    // create a couple of elements in an otherwise empty HTML page
+    const heading = document.createElement("div");
+    heading.classList.add('loaded'); // add loaded class
+
+    heading.innerHTML = `
+        <h1>Loaded!</h1>
+        <p class="loadedText">The &lt;h1&gt; above and this p were added after the page loaded.</p>
+        `;
+    
+    document.body.appendChild(heading);
+</script>
+
+</html>

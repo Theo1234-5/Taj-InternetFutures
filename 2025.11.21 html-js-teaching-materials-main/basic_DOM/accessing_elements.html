@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM and JS: Creating elements</title>
+    
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 16px;
+            color: hsla(0, 0%, 85%);
+            background-color: hsla(0, 0%,10%);
+            width:85%;
+            margin:3rem auto;
+        }
+        
+        /* This is an ID -- it is unique */
+        #replaceMe {
+            color:hsla(100, 60%, 40%);
+        }
+
+        .info {
+            font-style: oblique;
+            font-size: 0.875rem;
+        }
+
+        .info2 {
+            font-weight: 800;
+            font-size: 1rem;
+            color: hsla(60, 60%, 55%);
+        }
+        
+        /* this is a class, it is not unique */
+        .deactivated {
+            /* why doesn't the background change when the button is pressed? */
+            background-color: darkslategray;
+            color:hsla(100, 20%, 20%);
+            border-color: hsla(0, 0%, 15%);
+        }
+        
+        .activated {
+            background-color: hsla(30, 60%, 35%);
+        }
+
+        #replaceBtn {
+            background-color: hsla(90, 40%, 15%);
+            border-radius: 0.375rem;
+            box-shadow: 0px 2px 4px 2px hsla(90, 10%, 35%) inset;
+            color: hsla(90, 40%, 65%);
+            padding: 0.875rem;
+            font-size: 2rem;
+        }
+
+        /* Stolen from CSS diner! https://flukeout.github.io/ */
+        .strobe {
+            transform-origin: bottom;
+            animation: strobeStart .5s ease-out, strobe 1s infinite;
+            animation-delay: 0s, .5s;
+        }
+        
+        @keyframes strobeStart {
+            0% {
+                transform:  skew(0deg,0deg) scaleY(1) ;
+                animation-timing-function: ease-in;
+            }
+            40% {
+                transform:  skew(0deg,0deg) scaleY(.9);
+                animation-timing-function: ease-out;
+            }
+            100% { transform:   skew(4deg,0deg) scaleX(1); }
+        }
+        
+        @keyframes strobe {
+            0% { transform:   skew(4deg,0deg) scaleX(1); }
+            10% { transform:  skew(1deg,0deg) scaleY(.9) ; }
+            50% { transform:  skew(-4deg,0deg) scaleX(1); }
+            60% { transform:  skew(-1deg,0deg) scaleY(.9) ; }
+            100% {transform: skew(4deg,0deg) scaleX(1); }
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Finding elements</h1>
+    <p>We can query this html <em>document</em> for all elements that have a certain class, id, or type.
+        This example replaces an h1 with a #replaceMe id, and all elements with the class "info".
+        <br /><span class="info">P.S. this text has class info</span>
+    </p>
+    
+    <h1 id="replaceMe" class="strobe">This will be replaced</h1>
+
+    <h2>More on this</h2>
+    <p class="info">This text will change at some point because it also has a class "info"</p>
+
+    <button id="replaceBtn">Click to replace</button>
+
+</body>
+
+<script>
+    
+    // This page has a list of all events (see the left sidebar)
+    // https://www.w3.org/TR/DOM-Level-3-Events/#event-types
+
+    function handleClickEvent(event) {  //runs when you click on element
+            const replaceElement = document.querySelector('#replaceMe');
+            replaceElement.innerHTML = "Replaced! " + Date.now();
+
+
+            // get a list of all .info elements
+            const infoTextElements = document.querySelectorAll(".info");
+            for (const elem of infoTextElements) {
+                elem.classList.replace("info", "info2");
+            }
+
+            // stop listening
+            event.target.classList.add("deactivated");      //event target, thing that is clicked
+            event.target.removeEventListener('click',handleClickEvent);
+        }
+
+    // add an event listener that will trigger when the button is clicked,
+    // and will replace the text in the h1 element with id "replaceMe"
+    document.getElementById('replaceBtn').addEventListener('click', handleClickEvent);
+
+</script>
+    
+</html>
+    

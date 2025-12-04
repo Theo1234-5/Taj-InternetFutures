@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM and JS: Creating elements</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 16px;
+            color: hsla(0, 0%, 85%);
+            background-color: hsla(0, 0%,10%);
+            width:85%;
+            margin:3rem auto;
+        }
+
+        .loaded {
+            color:hsla(100, 60%, 40%);
+        }
+
+        .loadedText {
+            color:hsla(100, 20%, 30%);
+            font-size: 1.2rem;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Creating elements</h1>
+    <p>This example creates an element and adds it to the DOM (HTML body document) 
+        when the page loads.
+    </p>
+
+    <button id="replaceBtn">CLICK MEEEEEEEE</button>
+
+    function handleClickEvent(event) {  //runs when you click on element
+            const replaceElement = document.querySelector('#replaceMe');
+            replaceElement.innerHTML = "Replaced! " + Date.now();
+
+
+            // get a list of all .info elements
+            const infoTextElements = document.querySelectorAll(".info");
+            for (const elem of infoTextElements) {
+                elem.classList.replace("info", "info2");
+            }
+
+            // stop listening
+            event.target.classList.add("deactivated");      //event target, thing that is clicked
+            event.target.removeEventListener('click',handleClickEvent);
+        }
+    
+</body>
+
+<script>
+    // create a couple of elements in an otherwise empty HTML page
+    const heading = document.createElement("h1");
+    heading.classList.add('loaded'); // add loaded class
+    const headingText = document.createTextNode("Loaded!");
+    heading.appendChild(headingText);
+    document.body.appendChild(heading);
+
+    const content = document.createElement("p");
+    content.classList.add('loadedText');
+    const contentText = document.createTextNode('The <h1> above and this <p> were added after the page loaded.');
+    content.appendChild(contentText);
+    document.body.appendChild(content);
+</script>
+
+</html>
