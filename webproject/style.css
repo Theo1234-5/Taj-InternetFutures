@@ -9,6 +9,22 @@ p {
   color: purple;
 }
 
+/* placeholder buttons while waiting on Abeer's*/
+
+button {
+  background-color: yellow;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+:focus {
+  outline: none; 
+}
+
 header {    
   background-color: teal;
   padding: 30px;
@@ -16,7 +32,8 @@ header {
   font-size: 35px;
   color: white;
 } 
-aside#LINKS {
+
+aside {
   position: fixed;
   right: 0;
   top: 0;
