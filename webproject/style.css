@@ -3,18 +3,27 @@ body {
   background-color: white;
   padding: 0;
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 h1 {
   color: black;
+  font: 'Open Sans', sans-serif;
 }
 p {
   color: black;
-  margin-right: 220px;
+  margin-right: 200px;
   padding: 20px;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+  align-self: center;
+}
+
 main {
-  margin-right: 220px;
+  margin-right: 200px;
   padding: 20px;
 }
 
@@ -28,7 +37,7 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  
+  margin: 10px;
 }
 
 button:focus {
@@ -67,5 +76,6 @@ aside {
   margin-left: 10px;
   padding-top: 50px;
   padding-left: 20px;
+
 }
 
