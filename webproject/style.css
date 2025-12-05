@@ -11,8 +11,34 @@ h1 {
 }
 p {
   color: black;
-  margin-right: 200px;
+  margin-right: 20px;
   padding: 20px;
+}
+
+input, textarea {
+  width: 60%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#Other-Text {
+  display: none;
+}
+
+#issue4:checked ~ #Other-Text {
+  display: block;
+}
+
+input, submit {
+  margin-bottom: 15px;
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: black;
 }
 
 img {
@@ -23,8 +49,9 @@ img {
 }
 
 main {
-  margin-right: 200px;
+  margin-right: 0px;
   padding: 20px;
+  width: 75%
 }
 
 
