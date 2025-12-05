@@ -13,26 +13,64 @@ fontcolor="#FFFFFF"
 fontsize=16
 ]
 // STEP 4: Define categories (same level)
-{ rank=same; Category1; Category2; }
-Category1 [label="Parks", shape=oval]
-Category2 [label="Pubs", shape=oval]
+{ rank=same; Parks; Pubs; TFL;}
+Parks[label="Parks", shape=oval]
+Pubs [label="Pubs", shape=oval]
+TFL [label="TFL", shape=oval]
 
 // STEP 5: Define specific places (they auto-arrange below)
-Place1 [label="Red Lion Square", shape=rectangle]
-Place2 [label="Wetherspoons", shape=rectangle]
-Place3 [label="Bloomsbury", shape=rectangle]
-Place4 [label="Lincons Inn Fields", shape=rectangle]
-Place5 [label="Princess Louise", shape=rectangle]
-Place6 [label="The Duke", shape=rectangle]
-Place7 [label="The Seven Stars", shape=rectangle]
+{ rank=same; Category1; Category2; Category3; }
+Category1 [label="Coffee shops", shape=trapezium]
+
+Category2 [label="Supermarkets", shape=trapezium]
+Category3 [label="Restaurants", shape=trapezium]
+// STEP 5: Define specific places (they auto-arrange below)
+Starbucks [label="Starbucks", shape=rectangle]
+Gails [label="Gails", shape=rectangle]
+PretAManger [label="Pret A Manger", shape=rectangle]
+Waitrose [label="Waitrose", shape=rectangle]
+Sainsburys [label="Sainsbury's", shape=rectangle]
+Tesco [label="Tesco", shape=rectangle]
+ColonelSaabHH [label="Colonel Saab HH", shape=rectangle]
+HolbornDiningRoom [label="Holborn Dining Room", shape=rectangle]
+FTHolborn [label="42 Holborn", shape=rectangle]
+RedLionSquare[label="Red Lion Square", shape=rectangle]
+Wetherspons[label="Wetherspoons", shape=rectangle]
+Bloomsbury[label="Bloomsbury", shape=rectangle]
+LinconsInnFields[label="Lincons Inn Fields", shape=rectangle]
+PrincessLouise[label="Princess Louise", shape=rectangle]
+TheDuke[label="The Duke", shape=rectangle]
+TheSevenStars[label="The Seven Stars", shape=rectangle]
+HolbornStation[label="Holborn Station", shape=rectangle]
+CentralLine[label="Central Line", shape=rectangle]
+PiccadillyLine[label="Piccadilly Line", shape=rectangle]
+
 // STEP 6: Create connections (top to bottom)
-"Main Place Name" -> Category1
-"Main Place Name" -> Category2
-Category1 -> Place1
-Category2 -> Place2
-Category1 -> Place3
-Category1 -> Place4
-Category2 -> Place5
-Category2 -> Place6
-Category2 -> Place7
+"Main Place Name" -> Parks
+"Food and Drink" -> Pubs
+"Main Place Name" -> TFL 
+Parks -> RedLionSquare
+Pubs -> Wetherspons
+Parks -> Bloomsbury
+Parks -> LinconsInnFields
+Pubs -> PrincessLouise
+Pubs -> TheDuke
+Pubs -> TheSevenStars
+TFL -> HolbornStation 
+HolbornStation -> CentralLine
+HolbornStation -> PiccadillyLine
+"Food and Drink" -> Category1
+"Food and Drink" -> Category2
+"Food and Drink" -> Category3
+"Main Place Name" -> "Food and Drink"
+Category1 -> Starbucks
+Category1 -> Gails
+Category1 -> PretAManger
+Category2 -> Waitrose
+Category2 -> Sainsburys
+Category2 -> Tesco
+Category3 -> ColonelSaabHH
+Category3 -> HolbornDiningRoom
+Category3 -> FTHolborn
 }
+
