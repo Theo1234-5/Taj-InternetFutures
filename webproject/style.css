@@ -1,12 +1,14 @@
 
 body {
-  background-color: darkblue;
+  background-color: white;
+  padding: 0;
+  margin: 0;
 }
 h1 {
-  color: white;
+  color: black;
 }
 p {
-  color: orange;
+  color: black;
   margin-right: 220px;
   padding: 20px;
 }
@@ -20,7 +22,7 @@ main {
 /* placeholder buttons while waiting on Abeer's*/
 
 button {
-  background-color: yellow;
+  background-color: orange;
   color: black;
   padding: 10px 20px;
   border: none;
@@ -30,17 +32,27 @@ button {
 }
 
 button:focus {
-  outline: 5px solid orange; 
+  outline: 5px solid orangered; 
   color: black;
 }
 
 
 header {    
-  background-color: #0057b7;
+  background-color: yellowgreen;
   padding: 30px;
   text-align: center;
   font-size: 35px;
-  color: white;
+  color: black;
+  margin: 0;
+  top: 0;
+} 
+
+footer {    
+  background-color: yellowgreen;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: black;
 } 
 
 aside {
@@ -48,10 +60,12 @@ aside {
   right: 0;
   top: 0;
   height: 100vh;
-  background-color: lightgray;
-  color: blue;
-  padding: 20px;
-  width: 200px;
+  background-color: yellowgreen;
+  color: black;
+  padding: 5px;
+  width: 20%;
   margin-left: 10px;
+  padding-top: 50px;
+  padding-left: 20px;
 }
 
