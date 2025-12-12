@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accessible navigation example</title>
+    <header id="header">
+      <h1>FORM</h1>
+        <button id="skip-footer">Go to bottom</button>
+    </header>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="fonts.googleapis.com" rel="stylesheet">
+    <title>webproject</title>
+    <title>Form</title>
     <style>
         * {
             margin: 0;
@@ -153,19 +163,21 @@
 <body>
     <!-- Skip to main content link -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
+    <aside id="LINKS">
+      <p>links:</p>
+        <button onclick="window.location.href='index.html'"  tabindex="0">Home</button>
+        <button onclick="window.location.href='about.html'" tabindex="0">About</button>
+        <button onclick="window.location.href='contact.html'" tabindex="0">Contact</button>
+        <button onclick="window.location.href='abeer.html'" tabindex="0">Food</button>
+        <button onclick="window.location.href='trams.html'" tabindex="0">Trams</button>
+        <button onclick="window.location.href='signin.html'" tabindex="0">Sign In</button>
+    </aside>
 
     <header>
         <h1>Accessible Examples</h1>
         
         <!-- Navigation with keyboard support -->
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+       
     </header>
 
     <main id="main-content" tabindex="-1">
