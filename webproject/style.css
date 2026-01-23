@@ -11,47 +11,22 @@ h1 {
 }
 p {
   color: black;
-  margin-right: 20px;
+  margin-right: 200px;
   padding: 20px;
-}
-
-input, textarea {
-  width: 60%;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  height: 40px;
-  padding: 10px;
-  font-size: 16px;
-}
-
-#Other-Text {
-  display: none;
-}
-
-#issue4:checked ~ #Other-Text {
-  display: block;
-}
-
-input, submit {
-  margin-bottom: 15px;
-}
-label {
-  display: block;
-  margin-bottom: 8px;
-  color: black;
 }
 
 img {
   max-width: 100%;
   height: auto;
-  margin: 10px 0;
+  margin: 250px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   align-self: center;
 }
 
 main {
-  margin-right: 0px;
+  margin-right: 200px;
   padding: 20px;
-  width: 75%
 }
 
 
@@ -75,7 +50,7 @@ button:focus {
 
 header {    
   background-color: yellowgreen;
-  padding: 30px;
+  padding: 10px;
   text-align: center;
   font-size: 35px;
   color: black;
@@ -85,7 +60,7 @@ header {
 
 footer {    
   background-color: yellowgreen;
-  padding: 30px;
+  padding: 10px;
   text-align: center;
   font-size: 35px;
   color: black;
@@ -105,4 +80,25 @@ aside {
   padding-left: 20px;
 
 }
+
+img {
+  width: 50%;
+  justify-content: center;
+}
+
+img.roundelleft {
+  position: absolute;
+  height: 50px;
+  width: 60px;
+  left: 16px;
+}
+
+img.roundelright {
+  position: absolute;
+  height: 50px;
+  width: 60px;
+  right: 100px;
+}
+
+
 
