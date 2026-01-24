@@ -33,6 +33,7 @@ main {
 /* placeholder buttons while waiting on Abeer's*/
 
 button {
+  width: 200px;
   background-color: orange;
   color: black;
   padding: 10px 20px;
@@ -98,6 +99,12 @@ img.roundelright {
   height: 50px;
   width: 60px;
   right: 100px;
+}
+
+.left {
+  display: block;
+  margin-left: 1px;
+  width: 25%;
 }
 
 
