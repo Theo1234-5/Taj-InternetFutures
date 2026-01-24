@@ -1,0 +1,59 @@
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="fonts.googleapis.com" rel="stylesheet">
+    <title>webproject</title>
+  </head>
+  <body>
+    <header>Eco-Friendly Buildings!</header>
+    
+    <main>
+        <p>Eco-friendly</p>
+        <h2>Eco-Friendly Home (Fetch Park in Philadelphia)</h2>
+        <p>eco-friendly</p>
+    </main>
+    <footer id="footer">
+      <h2>FOOTER</h2>
+        <button id="skip-header">Go to top</button>
+      </footer> 
+    
+    <aside id="LINKS">
+      <h1>links:</h1>
+        <button onclick="window.location.href='index.html'"  tabindex="0">Home</button>
+        <button onclick="window.location.href='about.html'" tabindex="0">About</button>
+        <button onclick="window.location.href='contact.html'" tabindex="0">Contact</button>
+        <button onclick="window.location.href='abeer.html'" tabindex="0">Food</button>
+        <button onclick="window.location.href='trams.html'" tabindex="0">Trams</button>
+        <button onclick="window.location.href='dogpark.html'" tabindex="0">Dog Park</button>
+        <button onclick="window.location.href='ecofriendly.html'" tabindex="0">Eco Friendly</button>
+        <button onclick="window.location.href='signin.html'" tabindex="0">Sign In</button>
+    </aside>
+    <script>
+        const skipBottom = document.getElementById('skip-footer');
+        const footer = document.getElementById('footer');
+
+        skipBottom.addEventListener('click', () => {
+          footer.scrollIntoView({ behavior: 'smooth' }); // scroll smoothly
+          footer.focus({ preventScroll: true });        // move keyboard focus to footer
+        });
+
+        const skipHeader = document.getElementById('skip-header');
+        const header = document.getElementById('header');
+
+        skipHeader.addEventListener('click', () => {
+          header.scrollIntoView({ behavior: 'smooth' }); // scroll smoothly
+          header.focus({ preventScroll: true });        // move keyboard focus to footer
+        });
+      </script>
+  </body>
+</html>
+
+
