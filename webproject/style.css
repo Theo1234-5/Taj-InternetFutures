@@ -76,11 +76,11 @@ aside {
   color: black;
   padding: 5px;
   width: 20%;
-  margin-left: 10px;
   padding-top: 50px;
-  padding-left: 20px;
-
+  text-align: center;
 }
+
+
 
 img {
   width: 50%;
@@ -101,6 +101,11 @@ img.roundelright {
   right: 100px;
 }
 
+img.roundel {
+  height: 100px;
+  width: 115px;
+}
+
 .left {
   display: block;
   margin-left: 1px;
@@ -112,8 +117,8 @@ figure {
   width: 50%;
   background-color: rgb(231, 231, 231);
 
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+  align-items:center
 }
 
 
