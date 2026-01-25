@@ -107,5 +107,16 @@ img.roundelright {
   width: 25%;
 }
 
+figure {
+  border: 2px solid #555;
+  width: 50%;
+  background-color: rgb(231, 231, 231);
+
+  align-items: center;
+  justify-content: center;
+}
+
+
+
 
 
