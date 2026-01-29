@@ -153,7 +153,10 @@ td, th {
   width: 30%;
   border: 2px solid #10f8f8;
   text-align: center;
+  padding: 20px;
+
 }
+
 
 tr {
   border: 5px solid #2710f8;
