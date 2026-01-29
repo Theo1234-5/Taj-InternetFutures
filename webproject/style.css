@@ -1,6 +1,6 @@
 
 body {
-  background-color: white;
+  background-color: #fffce8;
   padding: 0;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
@@ -9,13 +9,13 @@ body {
 
 
 h1 {
-  color: black;
+  color: #3e363f;
   font: 'Open Sans', sans-serif;
   text-shadow: 0 0 10px #f837be;
 }
 
 p {
-  color: black;
+  color: #3e363f;
   margin-right: 200px;
   padding: 20px;
 }
@@ -39,7 +39,7 @@ main {
 
 button {
   width: 200px;
-  background-color: orange;
+  background-color: #B8B42D;
   color: black;
   padding: 10px 20px;
   border: none;
@@ -49,8 +49,8 @@ button {
 }
 
 button:focus {
-  outline: 5px solid orangered; 
-  color: black;
+  outline: 5px solid #697A21; 
+  color: #3e363f;
 }
 
 /*button.trends:focus {
@@ -71,7 +71,7 @@ button.trends {
 
 
 header {    
-  background-color: yellowgreen;
+  background-color: #DD403A;
   padding: 10px;
   text-align: center;
   font-size: 35px;
@@ -81,7 +81,7 @@ header {
 } 
 
 footer {    
-  background-color: yellowgreen;
+  background-color: #DD403A;
   padding: 10px;
   text-align: center;
   font-size: 35px;
@@ -93,7 +93,7 @@ aside {
   right: 0;
   top: 0;
   height: 100vh;
-  background-color: yellowgreen;
+  background-color: #DD403A;
   color: black;
   padding: 5px;
   width: 20%;
@@ -136,7 +136,7 @@ img.roundel {
 figure {
   border: 2px solid #555;
   width: 50%;
-  background-color: rgb(231, 231, 231);
+  background-color: #fffce8;
 
   text-align: center;
   align-items:center
@@ -168,7 +168,10 @@ img.trendstable {
   margin-left: 20%;
 }
 
-img.aiholborn {
-  
+img.holbornbar {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 40px;
+  width: 80%;
 }
 
