@@ -1,0 +1,92 @@
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="fonts.googleapis.com" rel="stylesheet">
+    <title>webproject</title>
+  </head>
+  <body>
+    <header id="header">
+    <div>
+      <h1>
+      <img class="roundelleft" src="lizzylineholborn.png">
+      Eco-friendly buildings
+      <img class="roundelright" src="lizzylineholborn.png">
+      </h1>
+    </div>
+        <button id="skip-footer">Go to bottom</button>
+    </header>
+    
+    <main>
+        <p>An eco-friendly lifestyle is 
+            important for various reasons, from reduced carbon footprint and energy consumption to even personal 
+            and social benefits such as improved health. In Holborn and St Pancras, 22% of climate emissions are from 
+            homes. 40% of homes are rated EPC D or below, meaning they are notably bad at insulating heat. That's 
+            18,241 households with unnecessarily high energy bills, and according to government data, at least 9% of 
+            households are in feul poverty. Improved insulation will reduce energy bills and carbon emissions as well 
+            as improved social health leading to lower costs for NHS. Additionally, 100% of neighbourhoods in Holborn 
+            and St Pancras have air pollution above levels reccomended by the World Health Organization, and 5% of the 
+            population suffers from respiratory diseases which are made worse by air polution. As the demand for 
+            eco-friendliness increases, we speculate buildings of the Holborn area to undergo 
+            modifications to adapt to the necessary conditions of the environment. In order to acheive this, we
+            speculate Holborn to take similar approaches to the impressive design "Earth-tect".
+        <h2>Eco-friendly home (Earth-tect)</h2>
+        <p>“Earth-tect” detached house is designed to achieve net zero CO2 emissions over its full 60-year lifecycle. 
+            It combines thermal insulation, solar power, storage batteries, and a renewable energy supply at no extra 
+            cost. It’s the first of its kind among major Japanese home builders to offer a fully decarbonised housing 
+            option from construction to demolition. In Japan, concerns over energy costs, natural disasters, and 
+            sustainability are causing demand for resilient and eco-friendly housing, and government policies are 
+            shifting towards stricter standards like net-zero homes. Consumers who value long-term savings, 
+            sustainability and durability (such as younger, environmentally conscious buyers and those in places where 
+            energy costs or climate extremes matter) are most likely affected. For the brand, it boosts leadership in 
+            decarbonisation and helps stand out in a changing market. The start of “earth-tect” shows a general 
+            direction towards lifecycle decarbonisation on housing as well as operational energy savings. Consumers 
+            want digital methods to track CO2  emissions and energy usage in real time. This is encouraging brands to 
+            explore eco-monitoring apps and carbon-accounting services. With increasing climate risks, homes may also 
+            taken on adaptive features for heatwaves, floods, or power outages.</p>
+        <button class="trends" onclick="window.location.href='trends.html'" tabindex="0">Back to trends</button>
+    </main>
+    <footer id="footer">
+      <h2>FOOTER</h2>
+        <button id="skip-header">Go to top</button>
+      </footer> 
+    
+    <aside id="LINKS">
+      <h1>links:</h1>
+        <button onclick="window.location.href='index.html'"  tabindex="0">Home</button>
+        <button onclick="window.location.href='about.html'" tabindex="0">About</button>
+        <button onclick="window.location.href='contact.html'" tabindex="0">Contact</button>
+        <button onclick="window.location.href='abeer.html'" tabindex="0">Food</button>
+        <button onclick="window.location.href='trams.html'" tabindex="0">Trams</button>
+        <button onclick="window.location.href='dogpark.html'" tabindex="0">Dog Park</button>
+        <button onclick="window.location.href='ecofriendly.html'" tabindex="0">Eco Friendly</button>
+        <button onclick="window.location.href='signin.html'" tabindex="0">Sign In</button>
+    </aside>
+    <script>
+        const skipBottom = document.getElementById('skip-footer');
+        const footer = document.getElementById('footer');
+
+        skipBottom.addEventListener('click', () => {
+          footer.scrollIntoView({ behavior: 'smooth' }); // scroll smoothly
+          footer.focus({ preventScroll: true });        // move keyboard focus to footer
+        });
+
+        const skipHeader = document.getElementById('skip-header');
+        const header = document.getElementById('header');
+
+        skipHeader.addEventListener('click', () => {
+          header.scrollIntoView({ behavior: 'smooth' }); // scroll smoothly
+          header.focus({ preventScroll: true });        // move keyboard focus to footer
+        });
+      </script>
+  </body>
+</html>
+
+

@@ -1,0 +1,95 @@
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="fonts.googleapis.com" rel="stylesheet">
+
+    <title>webproject</title>
+  </head>
+  <body>
+    <header id="header">
+    <div>
+      <h1>
+      <img class="roundelleft" src="lizzylineholborn.png">
+      Trends
+      <img class="roundelright" src="lizzylineholborn.png">
+      </h1>
+    </div>
+    <button id="skip-footer">Go to bottom</button>
+    </header>
+    <main>
+        <table class="trends">
+          <tr>
+            <td colspan="2">
+            After conducting research on current trends, we have integrated them into speculation of the future of London's Holborn neighbourhood. Listed below are the trends of interest and links to read more.
+            </td>
+          </tr>
+          <tr>
+            <td>
+            <h2>Food waste reduction</h2>
+            <button class="trends" onclick="window.location.href='abeer.html'" tabindex="0">Click here</button>
+            </td>
+            <td><img class="trendstable" src="foodtrendstable.jpg"></td>
+          </tr>
+            <td>
+            <h2>Dog Park Bar</h2>
+            <button class="trends" onclick="window.location.href='dogpark.html'" tabindex="0">Click here</button>
+            </td>
+            <td><img class="trendstable" src="lincolnsinntrendstable.jpg"></td>
+          </tr>
+          <tr>
+            <td>
+            <h2>Trams</h2>
+            <button class="trends" onclick="window.location.href='trams.html'" tabindex="0">Click here</button>
+            </td>
+            <td><img class="trendstable" src="tramstrendstable.jpg"></td>
+          </tr>
+          <tr>
+            <td>
+            <h2>Eco-friendliness</h2>
+            <button class="trends" onclick="window.location.href='ecofriendly.html'" tabindex="0">Click here</button>
+            </td>
+            <td><img class="trendstable" src="green-building-Ecofriendly.jpg"></td>
+          </table>
+        </table>
+        
+    <main>
+    <footer id="footer">
+      <h2>FOOTER</h2>
+        <button id="skip-header">Go to top</button>
+      </footer> 
+    <aside id="LINKS">
+      <p>links:</p>
+        <button onclick="window.location.href='index.html'"  tabindex="0">Home</button>
+        <button onclick="window.location.href='about.html'" tabindex="0">About</button>
+        <button onclick="window.location.href='contact.html'" tabindex="0">Contact</button>
+        <button onclick="window.location.href='abeer.html'" tabindex="0">Food</button>
+        <button onclick="window.location.href='trams.html'" tabindex="0">Trams</button>
+        <button onclick="window.location.href='signin.html'" tabindex="0">Sign In</button>
+    </aside>
+    <script>
+        const skipBottom = document.getElementById('skip-footer');
+        const footer = document.getElementById('footer');
+
+        skipBottom.addEventListener('click', () => {
+          footer.scrollIntoView({ behavior: 'smooth' }); // scroll smoothly
+          footer.focus({ preventScroll: true });        // move keyboard focus to footer
+        });
+
+        const skipHeader = document.getElementById('skip-header');
+        const header = document.getElementById('header');
+
+        skipHeader.addEventListener('click', () => {
+          header.scrollIntoView({ behavior: 'smooth' }); // scroll smoothly
+          header.focus({ preventScroll: true });        // move keyboard focus to footer
+        });
+      </script>
+  </body>
+</html>

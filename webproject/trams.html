@@ -1,0 +1,90 @@
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="fonts.googleapis.com" rel="stylesheet">
+    <title>webproject</title>
+  </head>
+  <body>
+    <header id="header">
+    <div>
+      <h1>
+      <img class="roundelleft" src="lizzylineholborn.png">
+      Trams
+      <img class="roundelright" src="lizzylineholborn.png">
+      </h1>
+    </div>
+        <button id="skip-footer">Go to bottom</button>
+    </header>
+    
+    <main>
+      <img src="Picture1.png" alt="Labelled future holborn showing bins dogs and trams" width="600" height="300"/>
+      <p>
+        Whilst tram networks already exist in south London, they currently don't exist in the city centre.
+        With tram networks expanding across Europe due to environmental and economic sustainability, we predict their
+        implementation into future central London including the Holborn neighbourhood, in line with the demand for
+        transportation, especially for those who work in the area as Holborn as many offices are based in the area.
+      </p>
+      <h2>What are trams?</h2>
+      <p>Trams are public transportation services for urban city areas involving vehicles running on tracks on public 
+        streets, and are powered by electricity collected by a pantograph from an overhead line.</p>
+      <h2>Why may trams be implemented into central London?</h2>
+      <p>According to Campaign for Better Transport, a single lane of a city street could carry 1,500 people per hour in cars, 
+        8,000 people in buses, or up to 22,000 people if it was used as a tram way. Trams are known for punctuality since 
+        running on dedicated tracks means they bypass traffic congestion, allowing for timetables to be kept reliable and 
+        predictable. Trams travel at slower speeds in cities, providing safety for pedestrains and cyclists. Modern trams are 
+        all electric, which helps to reduce air pollution and greenhouse gas emissions. In Holborn and St Pancras, transport is responsible for 14% of climate emissions, and causes air pollution, which is a significant risk to public health. Many trams feature full level-boarding, 
+        adding accessibility to wheelchair users and users with pushchairs or luggage. Trams have a long lifespan, outlasting 
+        buses and other rapid transit systems. Trams networks are cheaper and easier to install than rail lines. Trams are also 
+        becoming increasingly popular over travel options like bus or bicycle.</p>
+      
+      <figure>
+          <img src="trams.png" alt="Tramsroundel" class="left">
+          <figcaption>Roundel of Tramlink, branded as London Trams, a tram network serving Croydon and surrounding areas of south London.</figcaption>
+          <img src="croydontrams.jpg" alt="Croydontrams" class="left">
+          <figcaption>Example of trams in Croydon.</figcaption>
+        </figure>
+    <button class="trends" onclick="window.location.href='trends.html'" tabindex="0">Back to trends</button>
+    </main>
+    <footer id="footer">
+      <h2>FOOTER</h2>
+        <button id="skip-header">Go to top</button>
+      </footer> 
+    
+    <aside id="LINKS">
+      <h1>links:</h1>
+        <button onclick="window.location.href='index.html'"  tabindex="0">Home</button>
+        <button onclick="window.location.href='about.html'" tabindex="0">About</button>
+        <button onclick="window.location.href='contact.html'" tabindex="0">Contact</button>
+        <button onclick="window.location.href='abeer.html'" tabindex="0">Food</button>
+        <button onclick="window.location.href='trams.html'" tabindex="0">Trams</button>
+        <button onclick="window.location.href='signin.html'" tabindex="0">Sign In</button>
+    </aside>
+    <script>
+        const skipBottom = document.getElementById('skip-footer');
+        const footer = document.getElementById('footer');
+
+        skipBottom.addEventListener('click', () => {
+          footer.scrollIntoView({ behavior: 'smooth' }); // scroll smoothly
+          footer.focus({ preventScroll: true });        // move keyboard focus to footer
+        });
+
+        const skipHeader = document.getElementById('skip-header');
+        const header = document.getElementById('header');
+
+        skipHeader.addEventListener('click', () => {
+          header.scrollIntoView({ behavior: 'smooth' }); // scroll smoothly
+          header.focus({ preventScroll: true });        // move keyboard focus to footer
+        });
+      </script>
+  </body>
+</html>
+
+
