@@ -151,10 +151,18 @@ table.trends {
 
 td, th {
   width: 30%;
-  border: 1px solid #dddddd;
+  border: 2px solid #10f8f8;
   text-align: center;
 }
 
+tr {
+  border: 5px solid #2710f8;
+}
 
+img.trendstable {
+  width: 300px;
+  height: 220px;
+  margin-left: 20%;
+}
 
 
