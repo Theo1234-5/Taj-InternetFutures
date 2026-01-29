@@ -1,6 +1,6 @@
 
 body {
-  background-color: white;
+  background-color: #FFFFFF;
   padding: 0;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
@@ -10,14 +10,15 @@ body {
 
 h1 {
   color: black;
-  font: 'Open Sans', sans-serif;
-  text-shadow: 0 0 10px #f837be;
+  font-family: 'Karla', sans-serif;
+  text-shadow: 0 0 10px #DCE6E8;
 }
 
 p {
   color: black;
   margin-right: 200px;
   padding: 20px;
+  font-family: 'Karla', sans-serif;
 }
 
 img {
@@ -39,17 +40,18 @@ main {
 
 button {
   width: 200px;
-  background-color: orange;
+  background-color: #0080AA;
   color: black;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   margin: 10px;
+  font-family: 'Karla', sans-serif;
 }
 
 button:focus {
-  outline: 5px solid orangered; 
+  outline: 5px solid #FFD027; 
   color: black;
 }
 
@@ -71,21 +73,23 @@ button.trends {
 
 
 header {    
-  background-color: yellowgreen;
+  background-color: #DCE6E8;
   padding: 10px;
   text-align: center;
   font-size: 35px;
   color: black;
   margin: 0;
   top: 0;
+  font-family: 'Karla', sans-serif;
 } 
 
 footer {    
-  background-color: yellowgreen;
+  background-color: #DCE6E8;
   padding: 10px;
   text-align: center;
   font-size: 35px;
   color: black;
+  font-family: 'Karla', sans-serif;
 } 
 
 aside {
@@ -93,12 +97,13 @@ aside {
   right: 0;
   top: 0;
   height: 100vh;
-  background-color: yellowgreen;
+  background-color: #DCE6E8;
   color: black;
   padding: 5px;
   width: 20%;
   padding-top: 50px;
   text-align: center;
+  font-family: 'Karla', sans-serif;
 }
 
 
@@ -136,7 +141,8 @@ img.roundel {
 figure {
   border: 2px solid #555;
   width: 50%;
-  background-color: rgb(231, 231, 231);
+  background-color: #DCE6E8;
+  font-family: 'Karla', sans-serif;
 
   text-align: center;
   align-items:center
@@ -147,6 +153,7 @@ table.trends {
   padding-left: 2px;
   width: 90%;
   border-collapse: collapse;
+  font-family: 'Karla', sans-serif;
 }
 
 td, th {
@@ -154,7 +161,7 @@ td, th {
   border: 2px solid #10f8f8;
   text-align: center;
   padding: 20px;
-
+  font-family: 'Karla', sans-serif;
 }
 
 
