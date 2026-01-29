@@ -41,7 +41,12 @@
       App designed to reduce food waste + Holborn These three 
       interact by the food shopper using the AH app which is 
       the trend and Anthony is in Holborn which is the place this takes place in. The new feature on the AH app enables consumers to view discounted products nearing their expiration dates by showing which items are available, the quantity of each item in store, and the level of discount applied, which can reach up to 70% as the expiration date approaches. AH hopes that this initiative will increase sales of discounted items by 25%, and therefore cut down food waste. This programme links making environmentally sustainable choices with shoppers saving money, and makes it easier for consumers to locate discounted items what would otherwise go to waste.</p>
+      <button class="trends" onclick="window.location.href='trends.html'" tabindex="0">Back to trends</button>
     <main>
+    <footer id="footer">
+      <h2>FOOTER</h2>
+        <button id="skip-header">Go to top</button>
+      </footer> 
     <aside id="LINKS">
       <p>links:</p>
         <button onclick="window.location.href='index.html'"  tabindex="0">Home</button>
@@ -51,5 +56,22 @@
         <button onclick="window.location.href='trams.html'" tabindex="0">Trams</button>
         <button onclick="window.location.href='signin.html'" tabindex="0">Sign In</button>
     </aside>
+    <script>
+        const skipBottom = document.getElementById('skip-footer');
+        const footer = document.getElementById('footer');
+
+        skipBottom.addEventListener('click', () => {
+          footer.scrollIntoView({ behavior: 'smooth' }); // scroll smoothly
+          footer.focus({ preventScroll: true });        // move keyboard focus to footer
+        });
+
+        const skipHeader = document.getElementById('skip-header');
+        const header = document.getElementById('header');
+
+        skipHeader.addEventListener('click', () => {
+          header.scrollIntoView({ behavior: 'smooth' }); // scroll smoothly
+          header.focus({ preventScroll: true });        // move keyboard focus to footer
+        });
+      </script>
   </body>
 </html>
