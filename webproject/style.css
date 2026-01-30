@@ -23,6 +23,7 @@ p {
   color: #3e363f;
   margin-right: 200px;
   padding: 20px;
+  font-family: 'Karla', sans-serif;
 }
 
 img {
@@ -51,6 +52,7 @@ button {
   border-radius: 5px;
   cursor: pointer;
   margin: 10px;
+  font-family: 'Karla', sans-serif;
 }
 
 button:focus {
@@ -83,6 +85,7 @@ header {
   color: black;
   margin: 0;
   top: 0;
+  font-family: 'Karla', sans-serif;
 } 
 
 footer {    
@@ -91,6 +94,7 @@ footer {
   text-align: center;
   font-size: 35px;
   color: black;
+  font-family: 'Karla', sans-serif;
 } 
 
 aside {
@@ -104,6 +108,7 @@ aside {
   width: 20%;
   padding-top: 50px;
   text-align: center;
+  font-family: 'Karla', sans-serif;
 }
 
 
@@ -156,6 +161,7 @@ table.trends {
   padding-left: 2px;
   width: 90%;
   border-collapse: collapse;
+  font-family: 'Karla', sans-serif;
 }
 
 table.trends2 {
@@ -211,7 +217,7 @@ td, th {
   border: 2px solid #10f8f8;
   text-align: center;
   padding: 20px;
-
+  font-family: 'Karla', sans-serif;
 }
 
 
@@ -223,12 +229,5 @@ img.trendstable {
   width: 300px;
   height: 220px;
   margin-left: 20%;
-}
-
-img.holbornbar {
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 40px;
-  width: 80%;
 }
 
