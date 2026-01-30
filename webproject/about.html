@@ -26,15 +26,85 @@
     </div>
         <button id="skip-footer">Go to bottom</button>
     </header>
-    <p>this would be where the main body of the text would go</p>
+    <main>
+    <table class="about">
+      <tr>
+      <td>
+        <img class="taj" src="taj.jpeg">
+    
+      <br>
+      TAJ team arriving at King's Cross platform 9 and 3/4.
+      </td>
+      </tr>
+      <tr>
+      <td>
+        <h2>About the TAJ</h2>
+        <p1>
+        Theo, Abeer, and Jack are all Londoners who attend University of the Arts London High Holborn campus to study 
+        Computer Science. Our speculative interests lead us to predict the future of our campus' neighbourhood, inspired by
+        trends we found through conducting research as well as the local government (Camden Council) being a
+        driving force for eco-friendly environments.
+        </p1>
+        <br>
+        <br>
+        <br>
+
+        <p1>
+        Theo is from Warwickshire, and currently is working on developing his own games, which he would like to persue as a career in the future. 
+        He got to London on train. He wanted to be in London because his brother is here and there is a good connection to businesses that he may want to do some work experience with, coming from 'silicon spa', he has had connection with games companies. 
+        </p1>
+        <br>
+        <br>
+
+
+        <p1>
+        Abeer came from the United Arab Emirates, what compelled Abeer to study in London is because of the reputable levels of education that England has that is renowned across the globe. 
+        The reason why Abeer decided to stay in London for university is because of the unrivaled opportunties that london presents, and a degree from the United Kingdom in computer Science is viewed as more prestigious. 
+        </p1>
+        <br>
+        <br>
+
+        <p1>
+        Jack is from Jersey Channel Islands, and had visited London many times before moving to university
+        and has always enjoyed being in the city. Whilst still unsure about his future career choice, he is
+        thinking the possibility of careers related to software engineering or even game design.
+        </p1>
+        
+    
+
+      </td>
+      </tr>
+    </table>
+    </main>
+    <footer id="footer">
+      <h2>FOOTER</h2>
+        <button id="skip-header">Go to top</button>
+      </footer> 
     <aside id="LINKS">
-      <p>links:</p>
+      <h1>Navigation</h1>
         <button onclick="window.location.href='index.html'"  tabindex="0">Home</button>
         <button onclick="window.location.href='about.html'" tabindex="0">About</button>
         <button onclick="window.location.href='contact.html'" tabindex="0">Contact</button>
-        <button onclick="window.location.href='abeer.html'" tabindex="0">Food</button>
-        <button onclick="window.location.href='trams.html'" tabindex="0">Trams</button>
-        <button onclick="window.location.href='signin.html'" tabindex="0">Sign In</button>
+
+        <button onclick="window.location.href='trends.html'" tabindex="0">Trends</button>
+        <img class="holbornbar" src="holbornbar.jpg">
     </aside>
+    <script>
+        const skipBottom = document.getElementById('skip-footer');
+        const footer = document.getElementById('footer');
+
+        skipBottom.addEventListener('click', () => {
+          footer.scrollIntoView({ behavior: 'smooth' }); // scroll smoothly
+          footer.focus({ preventScroll: true });        // move keyboard focus to footer
+        });
+
+        const skipHeader = document.getElementById('skip-header');
+        const header = document.getElementById('header');
+
+        skipHeader.addEventListener('click', () => {
+          header.scrollIntoView({ behavior: 'smooth' }); // scroll smoothly
+          header.focus({ preventScroll: true });        // move keyboard focus to footer
+        });
+      </script>
   </body>
 </html>

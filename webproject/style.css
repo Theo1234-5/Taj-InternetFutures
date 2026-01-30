@@ -1,6 +1,6 @@
 
 body {
-  background-color: #FFFFFF;
+  background-color: #fffce8;
   padding: 0;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
@@ -9,13 +9,18 @@ body {
 
 
 h1 {
-  color: black;
-  font-family: 'Karla', sans-serif;
-  text-shadow: 0 0 10px #DCE6E8;
+  color: #3e363f;
+  font: 'Open Sans', sans-serif;
+  text-shadow: 0 0 10px #f837be;
 }
 
+h2 {
+  text-shadow: 0 0 10px #d5f839;
+}
+
+
 p {
-  color: black;
+  color: #3e363f;
   margin-right: 200px;
   padding: 20px;
   font-family: 'Karla', sans-serif;
@@ -40,7 +45,7 @@ main {
 
 button {
   width: 200px;
-  background-color: #0080AA;
+  background-color: #B8B42D;
   color: black;
   padding: 10px 20px;
   border: none;
@@ -51,8 +56,8 @@ button {
 }
 
 button:focus {
-  outline: 5px solid #FFD027; 
-  color: black;
+  outline: 5px solid #697A21; 
+  color: #3e363f;
 }
 
 /*button.trends:focus {
@@ -73,7 +78,7 @@ button.trends {
 
 
 header {    
-  background-color: #DCE6E8;
+  background-color: #DD403A;
   padding: 10px;
   text-align: center;
   font-size: 35px;
@@ -84,7 +89,7 @@ header {
 } 
 
 footer {    
-  background-color: #DCE6E8;
+  background-color: #DD403A;
   padding: 10px;
   text-align: center;
   font-size: 35px;
@@ -97,7 +102,7 @@ aside {
   right: 0;
   top: 0;
   height: 100vh;
-  background-color: #DCE6E8;
+  background-color: #DD403A;
   color: black;
   padding: 5px;
   width: 20%;
@@ -132,6 +137,10 @@ img.roundel {
   width: 95px;
 }
 
+img.taj {
+  width: 50%;
+}
+
 .left {
   display: block;
   margin-left: 1px;
@@ -141,8 +150,7 @@ img.roundel {
 figure {
   border: 2px solid #555;
   width: 50%;
-  background-color: #DCE6E8;
-  font-family: 'Karla', sans-serif;
+  background-color: #fffce8;
 
   text-align: center;
   align-items:center
@@ -154,6 +162,54 @@ table.trends {
   width: 90%;
   border-collapse: collapse;
   font-family: 'Karla', sans-serif;
+}
+
+table.trends2 {
+  margin-left: 25%;
+  margin-right: 30%;
+  text-align: center;
+  padding-left: 2px;
+  width: 40%;
+  border-collapse: collapse;
+}
+
+
+table.about {
+  width: 90%;
+  border: 5px solid #2710f8;
+  border-collapse: collapse;
+}
+
+table.invisible {
+  width: 90%;
+  border-collapse: collapse;
+}
+
+td.invisible {
+  border: 0px;
+  border-collapse: collapse;
+}
+
+
+
+tr.invisible2 {
+  border: 0px;
+}
+
+img.intable {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+img.graph {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 90%;
+}
+
+img.ecohome {
+  width: 95%;
+  margin-left: 5%;
 }
 
 td, th {
